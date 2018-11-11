@@ -25,10 +25,8 @@ def load_vgg_model(path):
     """
     Returns a model for the purpose of 'painting' the picture.
     Takes only the convolution layer weights and wrap using the TensorFlow
-    Conv2d, Relu and AveragePooling layer. VGG actually uses maxpool but
-    the paper indicates that using AveragePooling yields better results.
-    The last few fully connected layers are not used.
-    Here is the detailed configuration of the VGG model:
+    Conv2d, Relu and AveragePooling layer.
+    Configuration of the VGG model:
         0 is conv1_1 (3, 3, 3, 64)
         1 is relu
         2 is conv1_2 (3, 3, 64, 64)
@@ -184,34 +182,3 @@ def save_image(path, image):
     # Clip and Save the image
     image = np.clip(image[0], 0, 255).astype('uint8')
     scipy.misc.imsave(path, image)
-
-def lstm_cell(lstm_size, keep_prob):
-    cell = tf.contrib.rnn.BasicLSTMCell(lstm_size)
-    return tf.contrib.rnn.DropoutWrapper(cell, input_keep_prob = keep_prob)
-
-def decoding_layer(dec_embed_input, embeddings, enc_output, enc_state, vocab_size, text_length, summary_length,
-                   max_summary_length, rnn_size, vocab_to_int, keep_prob, batch_size, num_layers):
-    '''Create the decoding cell and attention for the training and inference decoding layers'''
-    dec_cell = tf.contrib.rnn.MultiRNNCell([lstm_cell(rnn_size, keep_prob) for _ in range(num_layers)])
-    output_layer = Dense(vocab_size,kernel_initializer=tf.truncated_normal_initializer(mean=0.0, stddev=0.1))
-    attn_mech = tf.contrib.seq2seq.BahdanauAttention(rnn_size,
-                                                     enc_output,
-                                                     text_length,
-                                                     normalize=False,
-                                                     name='BahdanauAttention')
-                                                     dec_cell = tf.contrib.seq2seq.AttentionWrapper(dec_cell,attn_mech,rnn_size)
-                                                     with tf.variable_scope("decode"):
-                                                         training_logits = training_decoding_layer(dec_embed_input,summary_length,dec_cell,
-                                                                                                   output_layer,
-                                                                                                   vocab_size,
-                                                                                                   max_summary_length,
-                                                                                                   batch_size)
-                                                     with tf.variable_scope("decode", reuse=True):
-                                                         inference_logits = inference_decoding_layer(embeddings,
-                                                                                                     vocab_to_int['<GO>'],
-                                                                                                     vocab_to_int['<EOS>'],
-                                                                                                     dec_cell,
-                                                                                                     output_layer,
-                                                                                                     max_summary_length,
-                                                                                                     batch_size)
-                                                             return training_logits, inference_logits
