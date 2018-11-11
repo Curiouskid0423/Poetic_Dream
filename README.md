@@ -10,10 +10,10 @@
   </head>
   <body>
 
-    This repository contains the Deep Learning Code of Poetic Dream
+    This repository contains the core Deep Learning Code of Poetic Dream
     
     1. Abstractive Summarization for reviews 
-    2. RAKE algorithm (expedient for abstractive summarization)
+    2. RAKE (Keyword-Extraction) algorithm   (expedient for abstractive summarization)
     3. LSTM Sentiment Analysis
     4. Neural Style Transfer in Tensorflow
   </body>
