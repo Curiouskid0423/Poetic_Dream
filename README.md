@@ -17,5 +17,6 @@
     3. LSTM Sentiment Analysis
     4. Neural Style Transfer in Tensorflow
   </body>
-  ![Poetic Dream Cover Photo](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/Poetic_Dream_Cover.png)
 </html>
+
+![Poetic Dream Cover Photo](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/Poetic_Dream_Cover.png)
