@@ -94,7 +94,6 @@ def calculate_word_scores(phraseList):
             word_frequency[word] += 1
             word_degree.setdefault(word, 0)
             word_degree[word] += word_list_degree  #orig.
-            #word_degree[word] += 1/(word_list_length*1.0) #exp.
     for item in word_frequency:
         word_degree[item] = word_degree[item] + word_frequency[item]
 
@@ -142,8 +141,7 @@ if test:
 
     # Split text into sentences
     sentenceList = split_sentences(text)
-    #stoppath = "FoxStoplist.txt" #Fox stoplist contains "numbers", so it will not find "natural numbers" like in Table 1.1
-    stoppath = "SmartStoplist.txt"  #SMART stoplist misses some of the lower-scoring keywords in Figure 1.5, which means that the top 1/3 cuts off one of the 4.0 score words in Table 1.1
+    stoppath = "SmartStoplist.txt"  #SMART stoplist misses some of the lower-scoring keywords
     stopwordpattern = build_stop_word_regex(stoppath)
 
     # generate candidate keywords
@@ -160,8 +158,6 @@ if test:
     if debug: print sortedKeywords
 
     totalKeywords = len(sortedKeywords)
-#    if debug: print totalKeywords
-#    print sortedKeywords[0:(totalKeywords / 3)]
 
     rake = Rake("SmartStoplist.txt")
     keywords = rake.run(text)
