@@ -9,7 +9,7 @@
 
 > **Final Webpage would be deployed on Google Cloud Platform soon.**
 
-    <div><h5>Poetic Dream is a poetry imagery visualizer deep learning project inspired by Coursera Specialization "Deep Learning" and thesis <i>"How image can inspire poem: Generating Classical Chinese Poetry from Images with Memory Networks"</i></h5></div> 
+   <div><h5>Poetic Dream is a poetry imagery visualizer deep learning project inspired by Coursera Specialization "Deep Learning" and thesis <i>"How image can inspire poem: Generating Classical Chinese Poetry from Images with Memory Networks"</i></h5></div> 
   </head>
   <body>
 
