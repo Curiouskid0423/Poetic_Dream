@@ -15,11 +15,11 @@
 
     This repository contains the core Deep Learning Code of Poetic Dream
     
-    1. Abstractive Summarization for reviews 
-    2. RAKE (Keyword-Extraction) algorithm   (expedient for abstractive summarization)
-    3. LSTM Sentiment Analysis
-    4. Neural Style Transfer in Tensorflow
-    5. GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, jQuery, jQuery, JSON...)
+    1.    Abstractive Summarization for reviews 
+    2.    RAKE (Keyword-Extraction) algorithm   (expedient for abstractive summarization)
+    3.    LSTM Sentiment Analysis
+    4.    Neural Style Transfer in Tensorflow
+    5.    GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, jQuery, jQuery, JSON...)
     
   </body>
   
