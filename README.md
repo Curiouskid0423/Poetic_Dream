@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <h3>Poetic Dream -- 12<sup>th</sup> grade self-directed project</h3>
-    
     <div><h5>Poetic Dream is a poetry imagery visualizer deep learning project inspired by Coursera Specialization "Deep Learning" and thesis <i>"How image can inspire poem: Generating Classical Chinese Poetry from Images with Memory Networks"</i></h5></div> 
   </head>
   <body>
