@@ -19,7 +19,7 @@
     2.    RAKE (Keyword-Extraction) algorithm   (expedient for abstractive summarization)
     3.    LSTM Sentiment Analysis
     4.    Neural Style Transfer in Tensorflow
-    5.    GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, jQuery, jQuery, JSON...)
+    5.    GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, Scss, jQuery, jQuery, JSON...)
     
   </body>
   
