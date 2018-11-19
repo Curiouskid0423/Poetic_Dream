@@ -18,10 +18,11 @@
     4. Neural Style Transfer in Tensorflow
     5. GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, jQuery, jQuery, JSON...)
     
-    Final Webpage would be deployed on Google Cloud Platform soon.
   </body>
+  
 </html>
 
+    <h3>Final Webpage would be deployed on Google Cloud Platform soon.</h3>
 ![Poetic Dream Cover Photo](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/Poetic_Dream_Cover.png)
 <hr>
 
