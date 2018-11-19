@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='idea_metaicon.png') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Poetic Dream</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <!-- Section 1 -->
+      <div id ="logo-1">
+        <a href="/">
+          <img src="{{ url_for('static', filename='Logo-01.png') }}" style="display:block; width:80%"/>
+        </a>
+      </div>
+      <!-- Section 4 -->
+      <section id="sec-4">
+      <div class="row bg-section" style="background-image: url({{ url_for('static', filename='Page4.jpg')}}); height: 92vh">
+        <div class="col-1">&nbsp;</div>
+        <div class="col-5">
+              <div style="height:10vh">
+                &nbsp;
+              </div>
+              <div class="d-flex  align-items-center des-container-4" style="height:80vh; width:100%">
+                 <div class="row">
+                    <div class="col-11" style="padding-left: 2rem">
+                        <p class="font-hel-light text-white text-left" style="font-size: 1.8rem; margin-top: 0rem; margin-left: 1rem">
+                          You just visualized <br>the imagery of your poem!
+                        </p>
+                        <hr class="w-auto" style="background-color: white; border: solid 1px white">
+
+                        <blockquote class="blockquote" style="padding-left: 1rem">
+                          <p class="mb-0 text-white font-hel-light" style="font-size: 20px">
+                            You just completed a magical task using the power of Deep Learning!
+                            Now you may proudly show your friends the imagery "visually," without
+                            long explanation of the poem. How amazing!
+
+                          </p><br>
+                        </blockquote>
+                        <ul class="list-group">
+                          <li class="list-group-item sec-1-list">Sentiment Analysis</li>
+                          <li class="list-group-item sec-1-list">RAKE Keyword Extraction</li>
+                          <li class="list-group-item sec-1-list">Image Search Engine</li>
+                          <li class="list-group-item sec-1-list">Neural Style Transfer</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+              </div>
+              <div style="height: 10vh">&nbsp;</div>
+          </div>
+          <div class="col-6">
+              <div class="row w-auto" style="height: 90vh">
+                  <div class="col-3">
+                    <a href="#">
+                        <img id="down-arrow-last"src="{{ url_for('static', filename='down-arrow.png') }}"
+                        style="transform: rotate(270deg);">
+                    </a>
+                  </div>
+                  <!-- Final image display -->
+                  <div class="col-8 d-flex  align-items-center">
+                      <img src="{{ url_for('static', filename='page4NST.jpg') }}" class="w-100 nst-output"/>
+                  </div>
+                  <!-- Final image display end -->
+                  <div class="col-1">&nbsp;</div>
+              </div>
+          </div>
+      </div>
+      <!-- Footer -->
+      <div class="row w-auto" style="height: 8vh;background-color: #4f4f4f;">
+        <div class="col-3 text-white">
+          <h5 class="text-center font-hel-light"
+          style="padding: 2.5vh 3rem 0 0"> Nov. 2018 </h5>
+        </div>
+        <div class="col-6">
+          <h4 class="text-center font-weight-light"
+          style="padding: 2vh 0 0 2rem; color: #35ea9f">Poetic Dream <a class="text-muted">Maker Portfolio</a></h4>
+
+        </div>
+        <div class="col-3 text-white">
+          <h5 class="text-center font-hel-light"
+          style="padding: 2.5vh 0 0 0"> Designed by &nbsp;&nbsp; <kbd>Kevin Li</kbd> </h5>
+        </div>
+      </div>
+    </section>
+      <!-- Section 4 END -->
+    </div>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/unsplashS.js') }}"></script>
+  </body>
+</html>

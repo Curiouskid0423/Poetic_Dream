@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='idea_metaicon.png') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Poetic Dream</title>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <!-- Section 1 -->
+      <div id ="logo-1">
+        <a href="#">
+          <img src="{{ url_for('static', filename='Logo-01.png') }}" style="display:block; width:80%"/>
+        </a>
+      </div>
+
+      <!-- Section 3 -->
+    <section id="sec-3">
+      <div class="row bg-section" style="background-image: url({{ url_for('static', filename='Page3.jpg') }})">
+          <div class="col-7">
+              <div class="row">
+                <div class="col-5">
+                  <form class="card card-sm" style="max-height: 3rem; margin-top: 15vh">
+                        <div class="card-body row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col">
+                                <input id="keyw" class="form-control form-control-lg form-control-borderless" type="search"
+                                value="{%for i in key%}{{ i }}&nbsp;{% endfor %}">
+                            </div>
+                            <!-- Search Content Button -->
+                            <div class="col-auto" style="max-height: 2rem; margin-right: -.5rem">
+                                <button type="button"class="btn btn-sm btn-dark"
+                                data-toggle="modal" data-target="#content-modal" onclick="myFunction()">
+                                  Search
+                                </button>
+                            </div>
+                            <!-- Search Content Button end -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="content-modal" tabindex="-1" role="dialog" aria-labelledby="content-modal" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">Unsplash Content Search </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                        {% for i in range(20)%}
+                                          <div class="col-6"><img id="output{{ i }}" style="width:100%;height:200px;border-radius: 1.1rem;margin: 0.1rem 0 0.1rem 0;"></div>
+                                        {% endfor %}
+                                      </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-dark ">Confirm</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- modal content end -->
+                        </div>
+
+                  </form>
+
+                </div>
+                <div class="col-5">
+                  <form class="card card-sm" style="max-height: 3rem; margin-top: 15vh">
+                        <div class="card-body row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="search"
+                                value="{{ sentiment }} Style Image">
+                            </div>
+                            <!-- Search Content Button -->
+                            <div class="col-auto" style="max-height: 2rem; margin-right: -.5rem">
+                                <button class="btn btn-sm btn-dark" type="button"
+                                data-toggle="modal" data-target="#style-modal">
+                                Search</button>
+                            </div>
+                            <!-- Search Content Button end -->
+                            <!-- Modal -->
+                            <div class="modal fade w-100" id="style-modal" tabindex="-1" role="dialog" aria-labelledby="style-modal" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title">Style Art Search </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body" style="min-height: 20rem; overflow: scroll">
+
+                                    <ul class="nav  nav-pills" id="myTab" role="tablist">
+                                      <li class="nav-item w-50 text-center">
+                                        <a class="nav-link active" id="nav-pos-tab" data-toggle="tab" href="#nav-pos" role="tab" aria-controls="pos" aria-selected="true">Positive</a>
+                                      </li>
+                                      <li class="nav-item w-50 text-center">
+                                        <a class="nav-link" id="nav-neg-tab" data-toggle="tab" href="#nav-neg" role="tab" aria-controls="neg" aria-selected="false">Negative</a>
+                                      </li>
+                                    </ul>
+                                    <!-- Positive Style section -->
+                                    <div class="tab-pane fade show active" id="nav-pos" role="tabpanel" aria-labelledby="nav-pos-tab" style="margin-top: .5rem">
+                                          <div class="row">
+                                              <!-- Style Image display -->
+                                                <div class="col-6"><img id="style1" src="{{ url_for('static', filename = 'style/positive/PosStyle-1.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style2" src="{{ url_for('static', filename = 'style/positive/PosStyle-2.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style3" src="{{ url_for('static', filename = 'style/positive/PosStyle-3.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style4" src="{{ url_for('static', filename = 'style/positive/PosStyle-4.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style5" src="{{ url_for('static', filename = 'style/positive/PosStyle-5.png') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style6" src="{{ url_for('static', filename = 'style/positive/PosStyle-6.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style7" src="{{ url_for('static', filename = 'style/positive/PosStyle-7.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style8" src="{{ url_for('static', filename = 'style/positive/PosStyle-8.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style9" src="{{ url_for('static', filename = 'style/positive/PosStyle-9.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style10" src="{{ url_for('static', filename = 'style/positive/PosStyle-10.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style11" src="{{ url_for('static', filename = 'style/positive/PosStyle-11.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <div class="col-6"><img id="style12" src="{{ url_for('static', filename = 'style/positive/PosStyle-12.jpg') }}" style="width:80%; height:200px; border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                              <!-- Style Image display -->
+                                            </div>
+                                    </div>
+                                    <!-- Negative section -->
+                                    <div class="tab-pane fade" id="nav-neg" role="tabpanel" aria-labelledby="nav-neg-tab">
+                                            <div class="row" style="margin-top:-1240px">
+                                                <!-- Style Image display -->
+                                                  <div class="col-6"><img id="neg-style1" src="{{ url_for('static', filename = 'style/negative/NegStyle-1.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style2" src="{{ url_for('static', filename = 'style/negative/NegStyle-2.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style3" src="{{ url_for('static', filename = 'style/negative/NegStyle-3.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style4" src="{{ url_for('static', filename = 'style/negative/NegStyle-4.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style5" src="{{ url_for('static', filename = 'style/negative/NegStyle-5.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style6" src="{{ url_for('static', filename = 'style/negative/NegStyle-6.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style7" src="{{ url_for('static', filename = 'style/negative/NegStyle-7.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style8" src="{{ url_for('static', filename = 'style/negative/NegStyle-8.png') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style9" src="{{ url_for('static', filename = 'style/negative/NegStyle-9.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style10" src="{{ url_for('static', filename = 'style/negative/NegStyle-10.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style11" src="{{ url_for('static', filename = 'style/negative/NegStyle-11.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                  <div class="col-6"><img id="neg-style12" src="{{ url_for('static', filename = 'style/negative/NegStyle-12.jpg') }}" style="width:80%;height:200px;border-radius: 1.1rem;margin: 0.3rem 0 0.1rem 10%;"></div>
+                                                <!-- Style Image display -->
+                                              </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-outline-dark ">Confirm</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- modal content end -->
+                            <!-- Search Content Button end -->
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-2">
+                  <a href="/final">
+                      <img id="down-arrow-three"src="{{ url_for('static', filename='down-arrow.png') }}" style="transform: rotate(-90deg)">
+                  </a>
+                </div>
+              </div>
+          </div>
+          <div class="col-5 des-container-3">
+              <div style="height:20vh">
+                &nbsp;
+              </div>
+              <div class="d-flex  align-items-center" style="height:60vh; width:100%">
+                 <div class="row">
+                    <div class="col-11" style="padding-left: 2rem">
+                        <hr class="w-75" style="background-color: white; border: solid 1px white">
+                        <h2 class="font-hel-light text-white text-center"><b>Neural Style Transfer</b></h2>
+                        <hr class="w-75" style="background-color: white; border: solid 1px white">
+
+                        <blockquote class="blockquote" style="padding-left: 3rem">
+                          <p class="mb-0 text-white font-hel-light" style="font-size: 19px">
+                            <br>
+                              To transform text to image, we would utilize <i>Unsplash API</i>
+                              - the world's largest photographer community, to search for appropriate
+                              <mark>content image</mark> of the subject in your poem. Then, after selecting
+                              a <mark>style image</mark> based on NLP task done in previous section, our Neural Net will perform NST
+                              to generate artwork of poetic imagery using the content and style images.
+                          </p><br>
+                        </blockquote>
+                        <ul class="list-group">
+                          <li class="list-group-item sec-1-list">Sentiment Analysis</li>
+                          <li class="list-group-item sec-1-list">RAKE Keyword Extraction</li>
+                          <li class="list-group-item sec-1-list">Image Search Engine</li>
+                          <li class="list-group-item sec-1-list">Neural Style Transfer</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+              </div>
+              <div style="height: 20vh">&nbsp;</div>
+          </div>
+      </div>
+    </section>
+      <!-- Section 3 END -->
+    </div>
+
+
+    <!-- Bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/unsplash.js') }}"></script>
+  </body>
+</html>
