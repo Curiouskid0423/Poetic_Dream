@@ -17,6 +17,8 @@
     3. LSTM Sentiment Analysis
     4. Neural Style Transfer in Tensorflow
     5. GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, jQuery, jQuery, JSON...)
+    
+    Final Webpage would be deployed on Google Cloud Platform soon.
   </body>
 </html>
 
