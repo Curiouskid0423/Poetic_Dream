@@ -1,0 +1,156 @@
+/* tags */
+
+mark{
+  background-color: rgba(53, 234, 159, 0.8);
+  color: #efefef;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+}
+input,input::input-placeholder {
+  font-size: 10px;
+}
+textarea{
+  resize: none;
+}
+.test{
+  overflow: visible;
+}
+/* id  */
+#logo-1{
+  position:fixed;
+  top: 18px;
+  left: 18px;
+  width: 12vw;
+  z-index: 3;
+}
+#git-logo{
+  position: absolute;
+  width: 2.6rem;
+  height: 2.6rem;
+  z-index: 3;
+}
+#git-logo-wrapper{
+  padding: 5% 0 0 90%;
+}
+#down-arrow-left{
+  width: 3.5vw;
+  display: block;
+  margin: 90vh 0 0 6.3vw;
+}#down-arrow-left:hover {
+  box-shadow: 10px 10px 132px 0px rgba(81, 87, 209,1);
+  transition: box-shadow .5s;
+}
+
+#down-arrow-right{
+  width: 3.5vw;
+  display: block;
+  margin: 15vh 0 0 8.5vw;
+}#down-arrow-right:hover {
+  box-shadow: 10px 10px 132px 0px rgba(81, 87, 209,1);
+  transition: box-shadow .5s;
+}
+
+#down-arrow-three{
+  width: 3.5vw;
+  display: block;
+  margin: 90vh 0 0 1.5vw;
+}#down-arrow-three:hover {
+  box-shadow: 10px 10px 132px 0px rgba(81, 87, 209,1);
+  transition: box-shadow .5s;
+}
+
+#down-arrow-last{
+  width: 3.5vw;
+  display: block;
+  margin: 83vh 0 0 0.1vw;
+}#down-arrow-last:hover {
+  box-shadow: 10px 10px 132px 0px rgba(81, 87, 209,1);
+  transition: box-shadow .5s;
+}
+
+#check-arrow{
+   height: 2.8rem;
+   margin: -.4rem 0 -.5rem 0;
+   float: right;
+   border-radius: 1.8rem;
+}#check-arrow:hover{
+    box-shadow: 2px -5px 200px 10px rgba(0, 0, 0,0.7);
+    transition: box-shadow .5s;
+}
+
+/* id end */
+
+/* class start */
+.display-mid{
+  display: block;
+  margin: auto;
+}
+.font-hel-light{
+  font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.sec-1-list{
+  padding-left: 3rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.bg-section{
+   width: 100vw;
+   height: 100vh;
+   background-size:cover;
+}
+.des-container-2{
+  background-color: rgba(39,39,39,0.6);
+  border-right: 8px solid #5157d1;
+}
+.des-container-3{
+  background-color: rgba(39,39,39,0.6);
+  border-left: 8px solid #35ea9f;
+}
+.des-container-4{
+  background-color: rgba(39,39,39,0.6);
+}
+
+.nlp-input{
+  margin: 10vh 11vw 0 11vw;
+  height: 65vh;
+  background-color: rgba(255,255,255,0.6);
+  overflow: auto;
+}
+.nlp-topic{
+  font-size: 20px;
+  background-color:rgba(81, 87, 209, 0.9);
+}
+.nst-output{
+  border: solid 0.4rem #ac7f4f;
+  z-index: 3;
+  max-height: 300px;
+  max-width: 500px;
+}
+.form-control-borderless {
+    border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.nav-pills > a.active {
+    background-color: #353A3F!important;
+    color: white!important;
+    font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.custom-file-input ~ .custom-file-label::after {
+    content: "Upload";
+}
+
+.display-key{
+  width: 10rem;
+  word-wrap: normal;
+}
+/* class end */
