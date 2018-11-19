@@ -29,6 +29,15 @@
 <hr>
 
 ![Screenshot1](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/UI-Screenshot/Screenshot-1.png)
+<hr>
+
 ![Screenshot2](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/UI-Screenshot/Screenshot-2.png)
+<hr>
+
 ![Screenshot3](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/UI-Screenshot/Screenshot-3.png)
+<hr>
+
+![Screenshot4](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/UI-Screenshot/Screenshot-redirect.png)
+<hr>
+
 ![Screenshot4](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/UI-Screenshot/Screenshot-4.png)
