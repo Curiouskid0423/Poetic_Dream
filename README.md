@@ -11,19 +11,30 @@
 
    <div><h5>Poetic Dream is a poetry imagery visualizer deep learning project inspired by Coursera Specialization "Deep Learning" and thesis <i>"How image can inspire poem: Generating Classical Chinese Poetry from Images with Memory Networks"</i></h5></div> 
   </head>
+
+> **Languages**
+<div style="margin-left: 3rem">
+  <h5>Python | Bootstrap | jQuery & Javascript| Scss 
+  <br>(APIs/Library)  Tensorflow, Numpy, Tesseract, Unsplash API</h5>
+
+</div> 
   <body>
 
     This repository contains the core Deep Learning Code of Poetic Dream
     
-    1.    Abstractive Summarization for reviews 
-    2.    RAKE (Keyword-Extraction) algorithm   (expedient for abstractive summarization)
-    3.    LSTM Sentiment Analysis
-    4.    Neural Style Transfer in Tensorflow
-    5.    GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, Scss, jQuery, jQuery, JSON...)
+    1.    OCR-Text-Detection with Tesseract (&pytessearct ocr)
+    2.    Abstractive Summarization for reviews 
+    3.    RAKE (Keyword-Extraction) algorithm   (expedient for abstractive summarization)
+    4.    LSTM Sentiment Analysis
+    5.    Neural Style Transfer in Tensorflow
+    
+    -    GUI Code: Flask + Bootstrap (Full Stack Web Dev. -- Bootstrap, Scss, jQuery, jQuery, JSON...)
     
   </body>
   
 </html>
+
+> **Demo Webpages**
 
 ![Poetic Dream Cover Photo](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/Poetic_Dream_Cover.png)
 <hr>
