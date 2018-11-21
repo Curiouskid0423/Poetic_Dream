@@ -35,6 +35,8 @@
   
 </html>
 
+![Flow-of-Data](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/Flow-of-data.png)
+
 > **Demo Webpages**
 
 ![Poetic Dream Cover Photo](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/Poetic_Dream_Cover.png)
