@@ -15,7 +15,7 @@
 
 > **Languages**
 <div style="margin-left: 3rem">
-  <h5>Python &nbsp;| &nbsp; Bootstrap &nbsp; | &nbsp; jQuery & Javascript &nbsp; | &nbsp; Scss 
+  <h5>Python &nbsp;| &nbsp; Bootstrap &nbsp; | &nbsp; jQuery | &nbsp;  JavaScript &nbsp; | &nbsp; Scss 
   <br>(APIs/Library) &nbsp;&nbsp;&nbsp; Tensorflow, Numpy, Tesseract, Unsplash API</h5>
 
 </div> 
