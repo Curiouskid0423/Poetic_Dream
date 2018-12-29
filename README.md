@@ -21,7 +21,8 @@
 </div> 
   <body>
 
-    This repository contains the core Deep Learning Code of Poetic Dream
+    This repository contains the core Deep Learning Code of Poetic Dream 
+    Some pre-trained models are not uploaded
     
     1.    OCR-Text-Detection with Tesseract (&pytessearct ocr)
     2.    Abstractive Summarization for reviews 
