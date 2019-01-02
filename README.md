@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <h3>Poetic Dream -- 12<sup>th</sup> grade self-directed project</h3>
-    <h4> Demo https://youtu.be/hg4VtFzubSU </h4>
-
-> **Final Webpage would be deployed on Google Cloud Platform soon.**
+    <h4> Demo   https://youtu.be/hg4VtFzubSU </h4>
+    <h4> Slide  https://www.slideshare.net/secret/EYKbca9ava45a </h4>
+ 
+ > **Final Webpage would be deployed on Google Cloud Platform soon.**
 
    <div><h5>Poetic Dream is a poetry imagery visualizer deep learning project inspired by Coursera Specialization "Deep Learning" and thesis <i>"How image can inspire poem: Generating Classical Chinese Poetry from Images with Memory Networks"</i></h5></div> 
   </head>
