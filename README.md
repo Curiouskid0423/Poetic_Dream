@@ -10,7 +10,6 @@
    <div><h5>Poetic Dream is a poetry imagery visualizer deep learning project inspired by Coursera Specialization "Deep Learning" and thesis <i>"How image can inspire poem: Generating Classical Chinese Poetry from Images with Memory Networks"</i></h5></div> 
   </head>
 
-> **Languages**
 <div style="margin-left: 3rem">
   <h5>Python &nbsp;| &nbsp; Bootstrap &nbsp; | &nbsp; jQuery | &nbsp;  JavaScript &nbsp; | &nbsp; Scss 
   <br> Tensorflow &nbsp;| &nbsp; Numpy &nbsp;| &nbsp; Tesseract &nbsp;| &nbsp; Unsplash API</h5>
@@ -18,7 +17,7 @@
 </div> 
   <body>
 
-    This repository contains the core Deep Learning Code of Poetic Dream 
+    This repository contains the core deep learning code of Poetic Dream 
     (trained models are not uploaded)
     
     1.    OCR-Text-Detection with Tesseract (&pytessearct ocr)
@@ -49,4 +48,4 @@
 
 ![Screenshot4](https://raw.githubusercontent.com/Curiouskid0423/Poetic_Dream/master/UI-Screenshot/Screenshot-4.png)
 
-#### Learn more - [[Demo](https://youtu.be/hg4VtFzubSU)]  [[Slide](https://www.slideshare.net/secret/EYKbca9ava45a)]
+##### Learn more - [[Demo](https://youtu.be/hg4VtFzubSU)]  [[Slide](https://www.slideshare.net/secret/EYKbca9ava45a)]
